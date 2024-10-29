@@ -2,7 +2,7 @@ name: DEV reactapplication CICD
 
 on:
   push:
-    branch:
+    branches:
         - feature
 jobs:
   build:
