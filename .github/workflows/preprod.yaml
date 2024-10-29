@@ -2,8 +2,8 @@ name: PREPROD reactapplication CICD
 
 on:
   push:
-    branch: --disable
-           ffeature-/-disabled
+    branch: 
+          
 jobs:
   build:
 
