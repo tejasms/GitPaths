@@ -3,7 +3,7 @@ name: reactapplication CICD
 on:
   push:
     paths:
-         'DEV'
+         'DEVsimple-reactjs-app/'
 
 jobs:
   build:
