@@ -2,9 +2,8 @@ name: reactapplication CICD
 
 on:
   push:
-    paths:
-          - 'DEV/simple-reactjs-app/**'
-
+    branch:
+          [feature]
 jobs:
   build:
 
@@ -21,7 +20,7 @@ jobs:
         cache: 'npm'
     
     - run: |
-          cd DEV/simple-reactjs-app
+          ls
           npm install  
     - run: npm install -g create-react-app
     - run: npm ci
