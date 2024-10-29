@@ -2,8 +2,8 @@ name: reactapplication CICD
 
 on:
   push:
-    psths:
-      'DEV'
+    paths:
+         'DEV'
 
 jobs:
   build:
