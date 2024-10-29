@@ -3,7 +3,7 @@ name: DEV reactapplication CICD
 on:
   push:
     branch:
-          [feature]
+        - feature
 jobs:
   build:
 
