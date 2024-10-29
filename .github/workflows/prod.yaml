@@ -3,7 +3,7 @@ name: PROD reactapplication CICD
 on:
   push:
     branch:
-          - feature/--disable
+          - feature-/--disable
 jobs:
   build:
 
