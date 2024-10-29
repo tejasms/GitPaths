@@ -3,7 +3,7 @@ name: PREPROD reactapplication CICD
 on:
   push:
     branch:
-          - feature --disable
+          - feature --disabled
 jobs:
   build:
 
