@@ -3,7 +3,7 @@ name: PROD reactapplication CICD
 on:
   push:
     branches:
-        - feature-disable
+        - feature
 jobs:
   build:
 
@@ -30,7 +30,7 @@ jobs:
       run: |
            sudo apt-get install awscli
     - name: Upload to S3
-      run: aws s3 cp build/ s3://react44newapp/ --recursive
+      run: aws s3 cp build/ s3://prod-s3-terra30/ --recursive
       env:
        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
